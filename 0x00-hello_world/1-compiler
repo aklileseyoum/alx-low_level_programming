@@ -1,1 +1,2 @@
-#!/bin/bash\ngcc -S $CFILE
+#!/bin/bash
+gcc -S $CFILE
