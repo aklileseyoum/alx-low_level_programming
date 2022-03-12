@@ -6,13 +6,17 @@
  */
 int main (void)
 {
-	int i;
+	char i;
 
-	for (i = 97; i <= 122; i++){
-		if (putchar(i) == 'q' || putchar(i) == 'e')
-			continue;
+	for (i = 'a'; i <= 'z'; i++){
+		if (i != 'e'){
+			if (i != 'q')
+				putchar(i);
+			else
+				continue;
+		}
 		else
-			putchar(i);
+			continue;
 	}
 
 	return (0);
