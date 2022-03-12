@@ -10,9 +10,13 @@ int main(void)
 
 	for (i = '0'; i <= '8'; i++){
 		putchar(i);
-		putchar(',');
+		if (i != '9'){
+			putchar(',');
+			putchar(' ');
+		}
+		else
+			continue;
 	}
-	putchar(i++);
 	putchar('\n');
 
 	return (0);
