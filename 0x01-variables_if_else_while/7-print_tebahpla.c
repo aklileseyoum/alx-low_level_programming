@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - print if the number is postive, zero, or negative
  *
@@ -11,7 +10,7 @@ int main(void)
 {
 	int i;
 
-	for (i = 122; i >=97; i++)
+	for (i = 122; i >=97; i--)
 		putchar(i);
 	putchar('\n');
 
