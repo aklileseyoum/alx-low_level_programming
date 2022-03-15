@@ -1,10 +1,9 @@
 #include "main.h"
 /**
- * main - print lower case letters
- *
- * Description: using the main function
- * this program prints "Programming _putchar
- * Return: 0
+ * print_alphabet - prints lowercase letters from the English alphabet.
+ * no parameter
+ * Return: void
+ * 
  */
 void print_alphabet(void)
 {
