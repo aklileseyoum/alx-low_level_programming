@@ -8,17 +8,23 @@ int print_sign(int n)
 {
 	if (n > 0)
 	{
-		printf("%s", "+, ");
+		_putchar('+');
+		_putchar(',');
+		_putchar(' ');
 		return (1);
 	}
 	else if (n = 0)
 	{
-		printf("%s", "0, ");
+		_putchar('0');
+                _putchar(',');
+                _putchar(' ');
 		return (0);
 	}
 	else
 	{
-		printf("%s", "-, ");
+		_putchar('-');
+                _putchar(',');
+                _putchar(' ');
 		return (-1);
 	}
 }
