@@ -17,17 +17,17 @@ void print_times_table(int n)
                 		_putchar(i * j + '0');
                 		if (r < 10)
 				{
-                    			_putchar('.');
-					_putchar('.');
-					_putchar('.');
+                    			_putchar(' ');
+					_putchar(' ');
+					_putchar(' ');
 				}
                 		else if (r < 100)
 				{
-                    			_putchar('.');
-					_putchar('.');
+                    			_putchar(' ');
+					_putchar(' ');
 				}
                 		else if (r < 1000)
-                    			_putchar('.');
+                    			_putchar(' ');
             		}
             		_putchar(i * n + '0');
             		_putchar('\n');
