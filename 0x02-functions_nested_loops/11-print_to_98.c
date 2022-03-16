@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include "main.h"
-
+/**
+ * times_table - prints the times table from 0 - 9.
+ * 
+ * Return: Nothing.
+ */
 void print_to_98(int n)
 {
 	if (n < 98)
