@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- *
- *
- *
+ * puts_half - executes the second half of the given string
+ * @str: pointer to input string.
+ * Return: Returns nothing
  */
 void puts_half(char *str)
 {
