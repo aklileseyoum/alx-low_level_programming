@@ -1,1 +1,1 @@
-README of the repo
+Pointers, arrays and strings readme
