@@ -8,12 +8,11 @@ void print_diagsums(int *a, int size)
 	sum2 = 0;
 	for (i = 0; i < size; i++)
 	{
-		sum = sum + *(*(a + i) + i);
+		sum = sum + *(a + (size + 1) * i);
 	}
-	for (i = 0; i < size; i++)
+	for (i = 1; i <= size; i++)
 	{
-		n = size - (i + 1);
-		sum2 = sum2 + *(*(a + i) + n);
+		sum2 = sum2 + *(a + (size - 1) * i);
 	}
 	_putchar(sum);
 	_putchar(',');
