@@ -2,6 +2,8 @@
 
 int prime(int a, int b)
 {
+	if (a == b)
+		return (prime(a, (b + 1)));
 	if (b > 9)
 		return (0);
 	if (a % b == 0)
