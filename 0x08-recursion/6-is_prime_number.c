@@ -9,7 +9,7 @@
  */
 int prime(int a, int b)
 {
-	if (a == b || a == -(b))
+	if (a == b)
 		return (prime(a, (b + 1)));
 	if (b > 9)
 		return (0);
@@ -27,5 +27,8 @@ int prime(int a, int b)
  */
 int is_prime_number(int n)
 {
-	return(prime(n, 1));
+	if (n <= 1)
+		return (0);
+
+	return (prime(n, 2));
 }
