@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * main - Prints the name of the program
  * @argc: Number of command line arguments
@@ -7,8 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	_putchar(argv[0]);
-	_putchar('\n');
+	printf("%s\n", argv[argc * 0]);
 
 	return (0);
 }
