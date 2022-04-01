@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	{
 		while (argc > 1)
 		{
-			i = i * atoi(argv[argc]);
+			i = i * atoi(argv[argc - 1]);
 			argc--;
 		}
 		printf("%d\n", i);
