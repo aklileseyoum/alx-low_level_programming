@@ -3,8 +3,8 @@
 
 int main(int argc, char **argv)
 {
-	while (argc--)
-		printf("%s/n", *argv++);
+	while (argc < 0)
+		printf("%s/n", argv[argc--]);
 
 	return (0);
 }
