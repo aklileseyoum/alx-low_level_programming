@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		while (argc > 1)
+		while (argc >= 1)
 		{
 			i = i * atoi(argv[argc - 1]);
 			argc--;
