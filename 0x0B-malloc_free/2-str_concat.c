@@ -6,11 +6,17 @@ char *str_concat(char *s1, char *s2)
 	char *s;
 	unsigned int i, n;
 
+	if (s1 == NULL && s2 == NULL)
+		return (NULL);
+	if (s1 == NULL && s2 != NULL)
+		return (s1);
+	if (s1 != NULL && s2 == NULL)
+		return (s2);
 	for (i = 0; s1[i] != '\0'; i++)
 		;
 	for (n = 0; s2[n] != '\0'; n++)
 		;
-	s = (char *)malloc(i + n + 2 * sizeof(char));
+	s = (char *)malloc(i + n + 1 * sizeof(char));
 	for (i = 0; s1[i] != '\0'; i++)
 		s[i] = s1[i];
 	for (n = 0; s2[n] != '\0'; n++)
