@@ -2,12 +2,14 @@
 #include <stdlib.h>
 /**
  * malloc_checked - returns pointer which memory is allocated
- * @b - unsigned integer which is the size of the memory in bytes
- * Return - void pointer
+ * @b - input
+ * Return - output
  */
 void *malloc_checked(unsigned int b)
 {
 	void *p = (void *)malloc(b);
+	if (p == NULL)
+		exit(98);
 
 	return (p);
 }
