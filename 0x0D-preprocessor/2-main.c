@@ -1,9 +1,9 @@
 #include "main.h"
-#define __FILE__
+#include <stdio.h>
 
 int main(void)
 {
-	_putchar(__FILE__);
+	_putchar(__BASE_FILE__);
 	_putchar('\n');
 
 	return (0);
