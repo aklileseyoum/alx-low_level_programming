@@ -10,6 +10,7 @@
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
+	/* Passing to stucture from main */
 	if (d != NULL)
 	{
 		d->name = name;
