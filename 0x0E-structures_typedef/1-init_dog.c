@@ -1,8 +1,15 @@
 #include "dog.h"
-
+/** 
+ * init_dog - assigns value to the variables
+ * @d: pointer that points to the struct dog
+ * @name: name value 
+ * @age: age value
+ * @owner: owner name valu
+ * Return - nothing
+ */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	d -> name = name;
-	d -> age = age;
-	d -> owner = owner;
+	d->name = name;
+	d->age = age;
+	d->owner = owner;
 }
