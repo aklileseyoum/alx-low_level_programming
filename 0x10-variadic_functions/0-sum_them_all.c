@@ -5,7 +5,7 @@
  * @n: the first parameter passed
  * Return: the sum of the parameters
  */
-int sum_them_all(const unsigned int n)
+int sum_them_all(const unsigned int n, ...)
 {
 	va_list ap;
 	int i, sum = 0;
