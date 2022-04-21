@@ -1,20 +1,26 @@
 #include "lists.h"
 #include <stdio.h>
 /**
-* list_len - A function that returns the number of elements in a list.
-* @h: A constant variable of type list_t.
-*
-* Return: The number of nodes (i).
-*
-*/
-size_t list_len(const list_t *h)
-{
-	unsigned int i;
-	const list_t *new = h;
+ * print_list - function that prints all the elements of a list_t list
+ * @h: Const pointer of structure list_t
+ * Return: Number of nodes
+ */
 
-	for (i = 0; new; i++)
+size_t print_list(const list_t *h)
+{
+	unsigned int i = 0;
+
+	while (h != NULL)
 	{
-		new = new->next;
+		if (h->str == NULL)
+			printf("[0] (nil)\n");
+
+		else
+			printf("[%d] %s\n", h->len, h->str);
+
+		h = h->next;
+		i++;
 	}
+
 	return (i);
 }
