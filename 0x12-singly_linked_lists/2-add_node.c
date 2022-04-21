@@ -1,48 +1,41 @@
-#include <stdio.h>
-#include "lists.h"
 #include <stdlib.h>
 #include <string.h>
+#include "lists.h"
+
 /**
-* add_node - A function that adds a new node at the beginning of a list_t list.
-* @head: Double pointer to the null.
-* @str: Variable type string.
-*
-* Return: The address of the new node.
-*
-*/
+ * add_node - function that adds a new node at the beginning of a list_t list
+ * @head: Const double pointer of structure list_t for beginning
+ * @str: Const char pointer for data to be added
+ * Return: List with new node for list_t list, NULL if failed
+ */
+
 list_t *add_node(list_t **head, const char *str)
 {
+
+	unsigned int i;
 	list_t *new;
+
+	new  = malloc(sizeof(list_t *));
 
 	if (str == NULL)
 	{
-		return (NULL);
+		new->str = NULL;
+		new->len = 0;
+		new->next = *head;
 	}
-	new = malloc(sizeof(list_t));
+
 	if (new == NULL)
-	{
 		return (NULL);
-	}
-	new->str = strdup(str);
-	new->len = _strlen(str);
+
 	new->next = *head;
 	*head = new;
-	return (new);
-}
-/**
-* _strlen - Returns the length of a string.
-* @s: The pointer.
-*
-* Return: To the value of s.
-*/
-int _strlen(const char *s)
-{
-	int i;
-	i = 0;
 
-	while (s[i] != 0)
-	{
-	i++;
-	}
-	return (i);
+	new->str = strdup(str);
+
+	for (i = 0; str[i]; i++)
+		;
+
+	new->len = i;
+
+	return (new);
 }
