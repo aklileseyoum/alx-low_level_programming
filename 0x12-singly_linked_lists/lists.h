@@ -1,5 +1,5 @@
-#ifndef CALC_H
-#define CALC_H
+#ifndef LISTS_H
+#define LISTS_H
 
 
 /**
