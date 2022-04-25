@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * pop_listint - deletes the head and returns head node's data
  * @head: input pointer
