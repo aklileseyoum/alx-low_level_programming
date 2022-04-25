@@ -1,6 +1,6 @@
 #include "lists.h"
 #include <stdio.h>
-#include <string.h>
+#include <stdlib.h>
 /**
  * add_nodeint - adds a node to the beginning of a linked list
  * @head: linked list pointer
