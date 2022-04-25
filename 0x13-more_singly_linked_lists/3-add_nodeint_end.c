@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * add_nodeint_end - adds new element to the end of the linked list
  * @head: start pointer of linked list
