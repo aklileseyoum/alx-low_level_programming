@@ -1,21 +1,23 @@
 #include "lists.h"
-#include <stdio.h>
-#include <stdlib.h>
-/** 
- * free_listint2 - frees the list and sets head to null
- * @head: input list pointer
- * Return: nothing
+/**
+ * free_listint2 - frees the list
+ * @head: the pointer to the struct
+ *
+ * Return: Always 0(success)
  */
 void free_listint2(listint_t **head)
 {
-	listint_t *temp;
+	listint_t *f;
 
 	if (head == NULL)
-		return (NULL);
+	{
+		return;
+	}
+
 	while (*head != NULL)
 	{
-		temp = *head;
-		*head = temp->next;
-		free(temp);
+		f = *head;
+		*head = f->next;
+		free(f);
 	}
 }
