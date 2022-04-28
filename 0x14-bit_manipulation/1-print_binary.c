@@ -6,7 +6,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	int num = (n & 1);
+	int num = ((n & 1) + '0');
 
 	if (n > 1)
 	{
