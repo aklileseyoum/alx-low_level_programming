@@ -8,7 +8,7 @@ unsigned int binary_to_uint(const char *b)
 {
 	unsigned int i, sum;
 
-	for (d = 0, i = 0; b[i] != '\0'; i++)
+	for (sum = 0, i = 0; b[i] != '\0'; i++)
 	{
 		if (b[i] == '1')
 			sum = (sum<<1) | 1;
