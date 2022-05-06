@@ -1,1 +1,1 @@
-Pointers, arrays and strings readme
+Readme for low level programming
